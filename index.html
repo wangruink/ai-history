@@ -1215,10 +1215,10 @@ function buildPx(){
       var d = document.createElement('div');
       if(ch === '#'){
         var v = 190 + Math.floor(Math.random()*65);
-        d.style.background = 'rgb(' + (v-100) + ',' + (v-40) + ',' + (v-15) + ')';
+        d.style.background = 'rgba(8,145,178,' + (v/255).toFixed(3) + ')';
         d.style.boxShadow = '0 0 8px rgba(8,145,178,.4)';
       } else {
-        d.style.background = 'rgba(45,90,170,' + (Math.random()*0.06).toFixed(3) + ')';
+        d.style.background = 'rgba(45,90,170,' + (0.07 + Math.random()*0.08).toFixed(3) + ')';
       }
       el.appendChild(d);
     });
